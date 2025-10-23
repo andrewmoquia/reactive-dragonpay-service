@@ -61,7 +61,7 @@
 		</dependency>
 
 
-		<!-- JAXB -->
+		<!-- JAXB for WSDL -->
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
@@ -80,7 +80,7 @@
 		</dependency>
 
 
-		<!-- Devtools for hot reload -->
+		<!-- Devtools for Hot Reload -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
