@@ -49,6 +49,7 @@ public class AppSecurityConfig {
 
             .authorizeExchange(exchange -> exchange
                 .pathMatchers("/private/**").authenticated()
+                .pathMatchers("/test/**").authenticated()
                 .anyExchange().denyAll()
             )
             
