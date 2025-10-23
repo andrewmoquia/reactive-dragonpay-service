@@ -1,5 +1,6 @@
 package com.dragonpay.reactive_dragonpay_service.config;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
@@ -71,7 +72,7 @@ public class AppSecurityConfig {
         ));
         config.setExposedHeaders(List.of("Authorization", "Content-Type"));
         config.setAllowCredentials(true);
-        config.setMaxAge(3000L);
+        config.setMaxAge(Duration.ofHours(1));
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
